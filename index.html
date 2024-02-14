@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/70e4fb2482.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FullStack Developer</p>
+          <h1>Hi, I'm <span>Dmitry Gusev</span></h1>
+          <h3 style="margin-top: 20px">
+            Building the Future of the Web,<br /><span style="margin-left: 15%"
+              >One Line of Code at a Time</span
+            >
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/1.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Experienced Fullstack Developer and with deep knowledge in React,
+              NodeJS, and MongoDB.<br />
+              Motivated for my next challenge in a company that is looking for a
+              great team player and self-learner to develop end-to-end web
+              applications and deal with challenging problems.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('military')">Military</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front End</span><br />Experienced in front-end
+                  development with proficiency in
+                  <span class="highlight">React</span> and
+                  <span class="highlight">Redux</span>, adept at
+                  <span class="highlight">JavaScript</span> and
+                  <span class="highlight">CSS</span> for building dynamic and
+                  visually appealing web applications.
+                </li>
+                <li>
+                  <span>Back End</span><br />Proficient in back-end development
+                  with <span class="highlight">NodeJS</span> with
+                  <span class="highlight">Express</span> as my primary
+                  technology, leveraging its capabilities to build robust and
+                  scalable server-side applications.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />Enhanced my proficiency
+                  through practical projects, collaborating with a mentor who
+                  provided expert guidance from project initiation to fruition.
+                  This hands-on experience significantly deepened my
+                  understanding of development processes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >2019 - 2023 BSc in Computer Science, Afeka college of
+                    engineering</span
+                  ><br />Throughout my academic journey, I delved into diverse
+                  technologies. In addition to my coursework, I acquired
+                  proficiency in <span class="highlight">C++</span>,
+                  <span class="highlight">C</span>,
+                  <span class="highlight">Python</span>,
+                  <span class="highlight">Java</span>,
+                  <span class="highlight">SQL</span>, and
+                  <span class="highlight">MongoDB</span> . My final project,
+                  scoring 92, involved experimenting with machine learning
+                  algorithms on Twitter text data using Python, showcasing
+                  practical application of my acquired skills.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="military">
+              <ul>
+                <li>
+                  <span>2011 - 2014</span><br />I completed my military service
+                  as a first sergeant, where I was responsible in helping to
+                  manage a squad, serving as the right-hand of the commander.
+                  During my service, I participated in two operations and gained
+                  valuable experience in leadership, teamwork, and crisis
+                  management. These skills have prepared me for a variety of
+                  challenging and demanding environments.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/1.jpg" />
+            <div class="layer">
+              <h3>Booking App</h3>
+              <p>
+                Built a complete MERN application, using Node.js and Express.js
+                for the backend and React for the user-friendly frontend.
+                Sorting pictures at Cloudinary and making payments with Stripe.
+                Styling was done with Tailwind CSS to ensure a polished and
+                responsive design.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/1.jpg" />
+            <div class="layer">
+              <h3>Movies and Subscriptions App</h3>
+              <p>
+                Developed a comprehensive MERN application for efficient movie
+                and subscription management. Engineered the backend with Node.js
+                and Express, while the frontend utilized React and Redux for
+                seamless state management. Tailwind CSS was employed for
+                styling, ensuring an intuitive and visually appealing interface.
+                The app seamlessly integrates data from diverse sources,
+                including JSON, web services, MongoDB, and a custom-built
+                server, showcasing versatility in handling varied datasets.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/1.jpg" />
+            <div class="layer">
+              <h3>Workers Management App</h3>
+              <p>
+                Architected a robust backend project exclusively using Node.js
+                and Express, demonstrating expertise in server-side development.
+                The frontend was crafted with Vanilla JavaScript, showcasing a
+                commitment to core language proficiency. Bootstrap was employed
+                for styling, ensuring a responsive and polished user interface,
+                indicative of a keen eye for design and usability.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              dmitrygusev91@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 053-2257242</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/dima.gusev.90"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/dmitrygusev91/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/DmitryGusev91"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="./CV/DmitryGusevCV.pdf" class="btn btn2" download
+              >Check CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          It came to me, my own, my code, my precious....
+          <i id="ring" class="fa-solid fa-ring"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const links = document.getElementsByClassName("tab-links");
+      const contents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tab) {
+        for (link of links) {
+          link.classList.remove("active-link");
+        }
+        for (content of contents) {
+          content.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      let menu = document.getElementById("menu");
+
+      function openMenu() {
+        menu.style.right = "0";
+      }
+
+      function closeMenu() {
+        menu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx8CHzTRNgIrNYj_zC0pNLwLrBAckXmbeQHSFDm3HKCx9xX3lpp7p8J31eXHlk3NmBB/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            form.reset();
+            setTimeout(() => (msg.innerHTML = ""), 5000);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
