@@ -23,7 +23,7 @@ body {
   background-position: center;
 }
 
-.portfolio{
+.portfolio {
   display: block;
   size: 16px;
 }
@@ -345,7 +345,7 @@ form .btn2 {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/1.jpg);
+    background-image: url(images/me.jpg);
   }
   .header-text {
     margin-top: 100%;
@@ -414,6 +414,6 @@ form .btn2 {
   }
 }
 
-#ring{
-  color:#f8ce32 ;
+#ring {
+  color: #f8ce32;
 }
